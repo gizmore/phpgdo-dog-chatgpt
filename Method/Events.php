@@ -6,10 +6,7 @@ use GDO\Dog\DOG_Message;
 
 final class Events extends DOG_Command
 {
-	
-	public function dog_message(DOG_Message $message)
-	{
-		
-	}
-	
+
+	public function dog_message(DOG_Message $message) {}
+
 }
