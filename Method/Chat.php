@@ -15,7 +15,7 @@ use GDO\Dog\DOG_Message;
 final class Chat extends DOG_Command
 {
 
-	public function getCLITrigger()
+	public function getCLITrigger(): string
 	{
 		return 'gpt';
 	}
