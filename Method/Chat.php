@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 namespace GDO\DogChatGPT\Method;
 
 use GDO\ChatGPT\Module_ChatGPT;
@@ -9,7 +10,7 @@ use GDO\Dog\DOG_Message;
 /**
  * Chat with ChatGPT.
  *
- * @version 7.0.2
+ * @version 7.0.3
  * @author gizmore
  */
 final class Chat extends DOG_Command
@@ -27,7 +28,7 @@ final class Chat extends DOG_Command
 		];
 	}
 
-	public function dogExecute(DOG_Message $message, string $text)
+	public function dogExecute(DOG_Message $message, string $text): void
 	{
 		$mod = Module_ChatGPT::instance();
 		$gpt = $mod->getClient();
