@@ -32,6 +32,7 @@ final class Chat extends DOG_Command
 	{
 		$mod = Module_ChatGPT::instance();
 		$gpt = $mod->getClient();
+        $message->reply('yes');
 	}
 
 }
